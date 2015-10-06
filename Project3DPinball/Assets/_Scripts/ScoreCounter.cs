@@ -14,9 +14,14 @@ public class ScoreCounter : MonoBehaviour {
 		myUIUpdater.updateTheUI(myScore);
 	}
 
+	void resetScore()
+	{
+		myScore = 0;
+	}
+
 	void OnCollisionEnter(Collision col)
 	{
-	if(col.gameObject.tag == "BallTag")
+	if(col.gameObject.tag == "ExtraScoreBumper")
 		{
 			AddExtraScore();
 		}
