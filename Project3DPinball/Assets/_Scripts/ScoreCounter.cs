@@ -7,13 +7,18 @@ public class ScoreCounter : MonoBehaviour {
 	public ScoreUIUpdater myUIUpdater;
 	public AudioSource soundWhenExtraScore;
 
-	void AddExtraScore(){
+	void AddExtraScore()
+	{
 		myScore = myScore + 100;
 		soundWhenExtraScore.Play();
 		myUIUpdater.updateTheUI(myScore);
 	}
 
-	void Update(){
-		AddExtraScore();
+	void OnCollisionEnter(Collision col)
+	{
+	if(col.gameObject.tag == "BallTag")
+		{
+			AddExtraScore();
+		}
 	}
 }
