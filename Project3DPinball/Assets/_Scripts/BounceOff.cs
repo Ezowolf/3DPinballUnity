@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class BounceOff : MonoBehaviour {
+	private float bounceOffPower;
 
 	private Rigidbody myRB;
 
@@ -14,7 +15,8 @@ public class BounceOff : MonoBehaviour {
 	{
 		if(col.gameObject.tag == "ExtraScoreBumper")
 		{
-			Debug.Log("miep");
+			bounceOffPower = Random.Range(-10F, -25F);
+			myRB.velocity = myRB.velocity * bounceOffPower;
 		}
 	}
 }
