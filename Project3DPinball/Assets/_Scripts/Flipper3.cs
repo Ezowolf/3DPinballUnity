@@ -1,33 +1,46 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Flipper3 : MonoBehaviour
-{
-	public float restPosition = 0F;
-	public float pressedPosition = 0F;
-	public float flipperStrength = 3000F;
-	public float flipperDamper = 1F;
-	//public string inputButtonName = "LeftFlipper";
+public class Flipper3 : MonoBehaviour {
 	
-	void Awake ()
-	{
-		GetComponent<HingeJoint>().useSpring = true;
+	public enum Side {
+		left,
+		right
+	};
+	public Side side;	
+	public float speed = 100f;
+	public HingeJoint hingeJoint;
+	
+	float _maxAngle = 60f;
+	JointSpring spring = new JointSpring();
+	
+	float _targetAngle;
+	
+	void Awake () {
+		hingeJoint.useSpring = true;
 	}
 	
-	// Update is called once per frame
-	void Update ()
-	{
-		JointSpring spring = new JointSpring();
+	void Start() {
+		spring.spring = speed;
+		spring.damper = 1f;
 		
-		spring.spring = flipperStrength;
-		spring.damper = flipperDamper;
+		HingeJoint hinge = gameObject.GetComponent<HingeJoint> ();
+		_maxAngle = hinge.limits.max;
+
+		if (side == Side.left)
+			hinge.axis = Vector3.down;
+		else
+			hinge.axis = Vector3.up;
+	}
+	
+	void FixedUpdate() {
+		if ((side == Side.right && Input.GetKey(KeyCode.RightArrow))
+		    || (side == Side.left && Input.GetKey(KeyCode.LeftArrow)))
+				spring.targetPosition = _maxAngle;
+
+		else
+			spring.targetPosition = 0f;
 		
-		if (Input.GetKeyDown ("space")) {
-			spring.targetPosition = pressedPosition;
-		} else {
-			spring.targetPosition = restPosition;
-		}
-		
-		GetComponent<HingeJoint>().spring = spring;
+		hingeJoint.spring = spring;
 	}
 }
