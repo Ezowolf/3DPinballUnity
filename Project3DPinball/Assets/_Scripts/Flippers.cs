@@ -4,20 +4,12 @@ using System.Collections;
 public class Flippers : MonoBehaviour {
 	private float rotitions = 0;
 	private bool open = false;
+
 	// Use this for initialization
 	void Start () {
 	
 	}
-
-	/*void OnEnable()
-	{
-		KeyboardInput.DoThings += Pressed ();
-	}
 	
-	void OnDiable()
-	{
-		KeyboardInput.DoThings -= Pressed ();
-	}*/
 	void Pressed()
 	{
 		open = true;
@@ -29,7 +21,6 @@ public class Flippers : MonoBehaviour {
 			Pressed ();
 		}
 	
-
 		if (open) {
 			if (rotitions < 90) {
 				transform.Rotate (Vector3.up * 10);
