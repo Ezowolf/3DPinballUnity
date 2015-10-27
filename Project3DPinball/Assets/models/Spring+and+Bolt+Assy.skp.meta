@@ -1,0 +1,131 @@
+fileFormatVersion: 2
+guid: 66f7c21c2c2e74637b3568aecc5c197a
+timeCreated: 1445940986
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 439c367d1b7a772f62ae9adcbdad2d5d
+  longitude: -105.283
+  latitude: 40.017000000000003
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -.403111398, y: .0539513156, z: -.100749947}
+      lookAt: {x: .00132554478, y: -.0450602397, z: .000368212524}
+      up: {x: .224174336, y: .972935975, z: .0560485348}
+      fov: 30
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes:
+    - camera:
+        position: {x: -.466242284, y: .0691363961, z: -.130769759}
+        lookAt: {x: -.375645012, y: .0469569787, z: -.108118445}
+        up: {x: .224174336, y: .972935975, z: .0560485348}
+        fov: 30
+        aspectRatio: 0
+        orthoSize: 1
+        isPerspective: 1
+      name: 330
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: .375
+    100002: .375#1
+    100004: .75
+    100006: .75 1
+    100008: .75 2
+    100010: Group 8
+    100012: //RootNode
+    400000: .375
+    400002: .375#1
+    400004: .75
+    400006: .75 1
+    400008: .75 2
+    400010: Group 8
+    400012: //RootNode
+    2300000: .375
+    2300002: .375#1
+    2300004: .75
+    2300006: .75 1
+    2300008: .75 2
+    2300010: Group 8
+    2300012: //RootNode
+    3300000: .375
+    3300002: .375#1
+    3300004: .75
+    3300006: .75 1
+    3300008: .75 2
+    3300010: Group 8
+    3300012: //RootNode
+    4300000: Mesh Spring+and+Bolt+Assy
+    4300002: Mesh .75
+    4300004: Mesh .375
+    4300006: Mesh Group 8
+    4300008: Mesh .375#1
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .0253999997
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

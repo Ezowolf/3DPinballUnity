@@ -6,6 +6,7 @@ TagManager:
   tags:
   - BallTag
   - ExtraScoreBumper
+  - Spring
   layers:
   - Default
   - TransparentFX
