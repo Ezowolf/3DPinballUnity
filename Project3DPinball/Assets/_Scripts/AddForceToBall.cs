@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class AddForceToBall : MonoBehaviour {
-	private bool canIBeLaunched = true;
+	private bool canIBeLaunched = false;
 	public float launchForce;
 	private Rigidbody rb;
 
@@ -18,4 +18,11 @@ public class AddForceToBall : MonoBehaviour {
 
 		}
 }
+	void OnCollisionEnter(Collision coll)
+	{
+		if(coll.gameObject.tag=="SpringTag")
+		{
+			canIBeLaunched = true;
+		}
+	}
 }

@@ -96,7 +96,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 434320, guid: 1e28cdf77a25dca4b94861c5329087ab, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 10.8999996
+      value: 10.8199997
       objectReference: {fileID: 0}
     - target: {fileID: 434320, guid: 1e28cdf77a25dca4b94861c5329087ab, type: 2}
       propertyPath: m_LocalPosition.y
@@ -104,7 +104,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 434320, guid: 1e28cdf77a25dca4b94861c5329087ab, type: 2}
       propertyPath: m_LocalPosition.z
-      value: .635999978
+      value: 1.08000004
       objectReference: {fileID: 0}
     - target: {fileID: 434320, guid: 1e28cdf77a25dca4b94861c5329087ab, type: 2}
       propertyPath: m_LocalRotation.x
@@ -124,7 +124,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 434320, guid: 1e28cdf77a25dca4b94861c5329087ab, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 434320, guid: 1e28cdf77a25dca4b94861c5329087ab, type: 2}
       propertyPath: m_LocalScale.x
@@ -206,7 +206,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100012, guid: 66f7c21c2c2e74637b3568aecc5c197a, type: 3}
       propertyPath: m_TagString
-      value: Spring
+      value: SpringTag
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 66f7c21c2c2e74637b3568aecc5c197a, type: 3}
@@ -449,7 +449,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 104018620}
   lengthInSec: 1
-  startDelay: 0
+  startDelay: .5
   speed: 1
   randomSeed: 0
   looping: 1
@@ -459,7 +459,7 @@ ParticleSystem:
   InitialModule:
     enabled: 1
     startLifetime:
-      scalar: 2
+      scalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1740,6 +1740,10 @@ Prefab:
       propertyPath: m_ConnectedAnchor.x
       value: 2.54999995
       objectReference: {fileID: 0}
+    - target: {fileID: 5473264, guid: e4e196eeb6aab2445819c9dd65a99636, type: 2}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e4e196eeb6aab2445819c9dd65a99636, type: 2}
   m_IsPrefabParent: 0
@@ -1889,7 +1893,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 583749134}
   m_LocalRotation: {x: 1.68528629e-07, y: -.317304671, z: -8.40252667e-08, w: .948323667}
-  m_LocalPosition: {x: 7.4000001, y: 1.91999996, z: 5.30999994}
+  m_LocalPosition: {x: 7.4000001, y: 1.91999996, z: 3.25}
   m_LocalScale: {x: 5, y: 1, z: 1.15570474}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2197,7 +2201,7 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: .0165848993
-  m_Height: .0518159866
+  m_Height: .0751195028
   m_Direction: 1
   m_Center: {x: -7.3521398e-05, y: .0259079933, z: -2.86009108e-05}
 --- !u!114 &783439117
@@ -2213,6 +2217,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSize: 0
   startingSize: {x: 5, y: 115, z: 5}
+--- !u!54 &783439118
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 783439112}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &801436745
 GameObject:
   m_ObjectHideFlags: 0
@@ -2531,7 +2550,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 984654417}
   m_LocalRotation: {x: 7.19113658e-08, y: .323291302, z: -3.82823053e-08, w: .946299493}
-  m_LocalPosition: {x: -10.1400003, y: 1.91999996, z: 6.30999994}
+  m_LocalPosition: {x: -10.1400003, y: 1.91999996, z: 4.28999996}
   m_LocalScale: {x: 5, y: 1, z: 1.15570474}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3484,7 +3503,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 130708, guid: 65bf8646a8d03403bb55e37eb9b4d8be, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11499716, guid: 65bf8646a8d03403bb55e37eb9b4d8be, type: 2}
       propertyPath: m_FontData.m_FontSize

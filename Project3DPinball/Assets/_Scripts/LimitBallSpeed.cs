@@ -11,10 +11,8 @@ public class LimitBallSpeed : MonoBehaviour {
 	}
 	void FixedUpdate()
 	{
-		Debug.Log(rb.velocity.magnitude);
 		if(rb.velocity.magnitude > maxSpeed)
 		{
-			Debug.Log("LIMIT!");
 			rb.velocity = rb.velocity.normalized * maxSpeed;
 		}
 	}
