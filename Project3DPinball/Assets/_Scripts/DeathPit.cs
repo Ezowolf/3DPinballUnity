@@ -23,7 +23,7 @@ public class DeathPit : MonoBehaviour {
 	void GameOver(Collision objectToDestroy)
 	{
 		soundWhenBallDestroys.Play();
-		if(myLivesCounter.ballLives<1)
+		if(myLivesCounter.ballLives==1)
 		{
 			Destroy(objectToDestroy.gameObject);
 			gameOverText.text = "GAME OVER";

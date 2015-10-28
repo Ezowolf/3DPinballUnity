@@ -1276,7 +1276,6 @@ GameObject:
   - 33: {fileID: 984654420}
   - 65: {fileID: 984654419}
   - 23: {fileID: 984654418}
-  - 114: {fileID: 984654422}
   m_Layer: 0
   m_Name: Cube (14)
   m_TagString: Untagged
@@ -1339,19 +1338,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
---- !u!114 &984654422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 984654417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f67f36bf601245c69456b8c228fab13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreWhenDissapear: 100
-  myScoreCounter: {fileID: 20581031}
 --- !u!1 &987721924
 GameObject:
   m_ObjectHideFlags: 0
@@ -1594,6 +1580,7 @@ GameObject:
   - 33: {fileID: 1176112931}
   - 65: {fileID: 1176112930}
   - 23: {fileID: 1176112929}
+  - 114: {fileID: 1176112933}
   m_Layer: 0
   m_Name: Dissolver
   m_TagString: Untagged
@@ -1655,7 +1642,20 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 1.15570474}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
+--- !u!114 &1176112933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1176112928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f67f36bf601245c69456b8c228fab13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreWhenDissapear: 2500
+  myScoreCounter: {fileID: 20581031}
 --- !u!4 &1528735147 stripped
 Transform:
   m_PrefabParentObject: {fileID: 462568, guid: e4e196eeb6aab2445819c9dd65a99636, type: 2}
@@ -1738,6 +1738,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 19
+--- !u!1 &1624073769 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 141542, guid: 1e28cdf77a25dca4b94861c5329087ab, type: 2}
+  m_PrefabInternal: {fileID: 20581030}
+--- !u!114 &1624073770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1624073769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3754e5b825b4a4698b9cef8fc1fa0e99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1765811151
 Prefab:
   m_ObjectHideFlags: 0
@@ -2340,6 +2355,7 @@ GameObject:
   - 33: {fileID: 2076031831}
   - 65: {fileID: 2076031830}
   - 23: {fileID: 2076031829}
+  - 114: {fileID: 2076031833}
   m_Layer: 0
   m_Name: Dissolver II
   m_TagString: Untagged
@@ -2402,6 +2418,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &2076031833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2076031828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f67f36bf601245c69456b8c228fab13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreWhenDissapear: 2500
+  myScoreCounter: {fileID: 20581031}
 --- !u!1001 &2128437812
 Prefab:
   m_ObjectHideFlags: 0
