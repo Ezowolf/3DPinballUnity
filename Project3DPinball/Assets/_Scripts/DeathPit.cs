@@ -3,10 +3,10 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class DeathPit : MonoBehaviour {
-	private bool haveIDestroyedBall = false;
 
 	public AudioSource soundWhenBallDestroys;
 	public Text gameOverText;
+	public LivesLeftCounter myLivesCounter;
 	
 	void Start()
 	{
@@ -22,10 +22,17 @@ public class DeathPit : MonoBehaviour {
 
 	void GameOver(Collision objectToDestroy)
 	{
-		//check if you still have balls left?
-		Destroy(objectToDestroy.gameObject);
-		haveIDestroyedBall = true;
 		soundWhenBallDestroys.Play();
-		gameOverText.text = "GAME OVER";
+		if(myLivesCounter.ballLives<1)
+		{
+			Destroy(objectToDestroy.gameObject);
+			gameOverText.text = "GAME OVER";
+		}
+		else
+		{
+			objectToDestroy.transform.position = new Vector3(11F,2.077F,5F);
+			myLivesCounter.ballLives--;
+			myLivesCounter.UpdateTheLivesUI();
+		}
 	}
 }
