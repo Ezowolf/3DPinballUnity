@@ -3,7 +3,7 @@ using System.Collections;
 
 public class AddForceToBall : MonoBehaviour {
 	private bool canIBeLaunched = false;
-	public float launchForce;
+	public float launchForce = 9999;
 	private Rigidbody rb;
 
 	void Start()
@@ -14,7 +14,7 @@ public class AddForceToBall : MonoBehaviour {
 		if (Input.GetKeyUp("space")&&canIBeLaunched==true)
 		{
 			canIBeLaunched = false;
-			rb.AddForce(transform.forward * launchForce );
+			rb.velocity = new Vector3(0,0,launchForce);
 
 		}
 }
